@@ -1,0 +1,16 @@
+# MotorDriver
+# 2015-11-26 03:24:40Z
+
+# IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 2
+# IO_3@[IOP=(3)][IoId=(3)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 3
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "\I2C:sda(0)\" iocell 3 1
+set_io "\I2C:scl(0)\" iocell 3 0
+set_io "\UART:tx(0)\" iocell 4 1
+set_io "\UART:rx(0)\" iocell 4 0
+set_io "Current(0)" iocell 2 5
+set_io "PWM_AB(0)" iocell 2 6
+set_io "PWM_CD(0)" iocell 2 7
+set_location "\ADC:cy_psoc4_sar\" p4sarcell -1 -1 0

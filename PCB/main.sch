@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1573,6 +1573,23 @@ Low Noise: 30 μVRMS typ (10 Hz to 100 kHz)&lt;br&gt;
 <text x="2.54" y="-2.54" size="0.889" layer="27" ratio="11" rot="R90">&gt;VALUE</text>
 <rectangle x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" layer="39"/>
 </package>
+<package name="H4-2.54">
+<wire x1="-1.27" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="21"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-5.08" x2="-1.27" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-5.08" x2="-1.27" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="5.08" x2="1.27" y2="5.08" width="0" layer="39"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="-5.08" width="0" layer="39"/>
+<wire x1="1.27" y1="-5.08" x2="-1.27" y2="-5.08" width="0" layer="39"/>
+<wire x1="-1.27" y1="-5.08" x2="-1.27" y2="5.08" width="0" layer="39"/>
+<pad name="1" x="0" y="3.81" drill="0.889" diameter="1.651" shape="square"/>
+<pad name="2" x="0" y="1.27" drill="0.889" diameter="1.651"/>
+<pad name="3" x="0" y="-1.27" drill="0.889" diameter="1.651"/>
+<pad name="4" x="0" y="-3.81" drill="0.889" diameter="1.651"/>
+<text x="-1.905" y="-1.905" size="0.889" layer="25" ratio="11" rot="R90">&gt;name</text>
+<text x="2.54" y="-1.905" size="0.889" layer="27" ratio="11" rot="R90">&gt;value</text>
+<rectangle x1="-1.27" y1="-5.08" x2="1.27" y2="5.08" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POWER-JACK-DC">
@@ -1618,6 +1635,18 @@ Low Noise: 30 μVRMS typ (10 Hz to 100 kHz)&lt;br&gt;
 <pin name="1" x="-7.62" y="2.54" length="middle" function="dotclk" swaplevel="1"/>
 <pin name="2" x="-7.62" y="-2.54" length="middle" swaplevel="1"/>
 </symbol>
+<symbol name="HEADER-4P">
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="6.35" size="1.27" layer="95" ratio="10">&gt;name</text>
+<text x="-1.27" y="6.35" size="1.27" layer="96" ratio="10">&gt;value</text>
+<pin name="P$1" x="-7.62" y="3.81" visible="pad" length="middle" function="dotclk"/>
+<pin name="P$2" x="-7.62" y="1.27" visible="pad" length="middle"/>
+<pin name="P$3" x="-7.62" y="-1.27" visible="pad" length="middle"/>
+<pin name="P$4" x="-7.62" y="-3.81" visible="pad" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONN-POWER-JACK-2.1MM(DC-005)" prefix="J" uservalue="yes">
@@ -1655,6 +1684,28 @@ Low Noise: 30 μVRMS typ (10 Hz to 100 kHz)&lt;br&gt;
 <technologies>
 <technology name="">
 <attribute name="MPN" value="F185-1102A1BSYA1" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIP-BLACK-FEMALE-HEADER-VERT(4P-2.54)" prefix="J" uservalue="yes">
+<description>320030017</description>
+<gates>
+<gate name="G$1" symbol="HEADER-4P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="H4-2.54">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="F185-1104A1BSYA1" constant="no"/>
+<attribute name="VALUE" value="4p-2.54" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -16429,6 +16480,13 @@ with :import-pads-powerpcb-v5.ulp Version 1.0.1 at 04.10.2012 14:11:25</descript
 <part name="C13" library="My_RLC" deviceset="CAP0603" device=""/>
 <part name="C14" library="My_RLC" deviceset="CAP0603" device=""/>
 <part name="P+20" library="supply1" deviceset="+5V" device=""/>
+<part name="J4" library="Seeed-OPL-Connector" deviceset="DIP-BLACK-FEMALE-HEADER-VERT(4P-2.54)" device="" value="4p-2.54"/>
+<part name="J5" library="Seeed-OPL-Connector" deviceset="DIP-BLACK-FEMALE-HEADER-VERT(4P-2.54)" device="" value="4p-2.54"/>
+<part name="GND23" library="supply1" deviceset="GND" device=""/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
+<part name="R17" library="My_RLC" deviceset="RES0603" device=""/>
+<part name="R18" library="My_RLC" deviceset="RES0603" device=""/>
+<part name="GND25" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16540,6 +16598,13 @@ with :import-pads-powerpcb-v5.ulp Version 1.0.1 at 04.10.2012 14:11:25</descript
 <instance part="C13" gate="G$1" x="264.16" y="177.8" rot="R270"/>
 <instance part="C14" gate="G$1" x="269.24" y="177.8" rot="R270"/>
 <instance part="P+20" gate="1" x="261.62" y="101.6" rot="MR180"/>
+<instance part="J4" gate="G$1" x="297.18" y="46.99"/>
+<instance part="J5" gate="G$1" x="297.18" y="31.75"/>
+<instance part="GND23" gate="1" x="281.94" y="50.8" rot="R270"/>
+<instance part="GND24" gate="1" x="281.94" y="35.56" rot="R270"/>
+<instance part="R17" gate="G$1" x="200.66" y="119.38" rot="R90"/>
+<instance part="R18" gate="G$1" x="193.04" y="124.46" rot="R180"/>
+<instance part="GND25" gate="1" x="200.66" y="109.22"/>
 </instances>
 <busses>
 </busses>
@@ -17096,6 +17161,11 @@ with :import-pads-powerpcb-v5.ulp Version 1.0.1 at 04.10.2012 14:11:25</descript
 <wire x1="2.54" y1="149.86" x2="20.32" y2="149.86" width="0.1524" layer="91"/>
 <label x="20.32" y="149.86" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="180.34" y1="124.46" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
+<label x="180.34" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R18" gate="G$1" pin="P$2"/>
+</segment>
 </net>
 <net name="N$19" class="0">
 <segment>
@@ -17372,6 +17442,11 @@ with :import-pads-powerpcb-v5.ulp Version 1.0.1 at 04.10.2012 14:11:25</descript
 <label x="60.96" y="99.06" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="R16" gate="G$1" pin="P$1"/>
 </segment>
+<segment>
+<wire x1="243.84" y1="106.68" x2="243.84" y2="101.6" width="0.1524" layer="91"/>
+<label x="243.84" y="101.6" size="1.27" layer="95" rot="MR270" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="12"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -17383,6 +17458,11 @@ with :import-pads-powerpcb-v5.ulp Version 1.0.1 at 04.10.2012 14:11:25</descript
 <wire x1="58.42" y1="104.14" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
 <label x="58.42" y="99.06" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="R15" gate="G$1" pin="P$1"/>
+</segment>
+<segment>
+<wire x1="236.22" y1="114.3" x2="233.68" y2="114.3" width="0.1524" layer="91"/>
+<label x="233.68" y="114.3" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="11"/>
 </segment>
 </net>
 <net name="STEPAB" class="0">
@@ -17396,6 +17476,11 @@ with :import-pads-powerpcb-v5.ulp Version 1.0.1 at 04.10.2012 14:11:25</descript
 <pinref part="J3" gate="G$1" pin="1"/>
 <label x="-40.64" y="20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<label x="223.52" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="8"/>
+<wire x1="223.52" y1="121.92" x2="236.22" y2="121.92" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="STEPCD" class="0">
 <segment>
@@ -17407,6 +17492,11 @@ with :import-pads-powerpcb-v5.ulp Version 1.0.1 at 04.10.2012 14:11:25</descript
 <wire x1="-43.18" y1="25.4" x2="-40.64" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="2"/>
 <label x="-40.64" y="25.4" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<label x="223.52" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="9"/>
+<wire x1="236.22" y1="119.38" x2="223.52" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$53" class="0">
@@ -17471,6 +17561,31 @@ with :import-pads-powerpcb-v5.ulp Version 1.0.1 at 04.10.2012 14:11:25</descript
 <wire x1="264.16" y1="175.26" x2="269.24" y2="175.26" width="0.1524" layer="91"/>
 <junction x="264.16" y="175.26"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="10"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="236.22" y1="116.84" x2="231.14" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="236.22" y1="139.7" x2="231.14" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="P$1"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+<wire x1="289.56" y1="50.8" x2="284.48" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J5" gate="G$1" pin="P$1"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+<wire x1="289.56" y1="35.56" x2="284.48" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="P$1"/>
+<pinref part="GND25" gate="1" pin="GND"/>
+<wire x1="200.66" y1="114.3" x2="200.66" y2="111.76" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$58" class="0">
 <segment>
@@ -17515,6 +17630,16 @@ with :import-pads-powerpcb-v5.ulp Version 1.0.1 at 04.10.2012 14:11:25</descript
 <pinref part="C13" gate="G$1" pin="P$1"/>
 <wire x1="261.62" y1="182.88" x2="264.16" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="182.88" x2="264.16" y2="180.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$60" class="0">
+<segment>
+<pinref part="R17" gate="G$1" pin="P$2"/>
+<pinref part="R18" gate="G$1" pin="P$1"/>
+<wire x1="200.66" y1="124.46" x2="198.12" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="7"/>
+<wire x1="200.66" y1="124.46" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
+<junction x="200.66" y="124.46"/>
 </segment>
 </net>
 </nets>

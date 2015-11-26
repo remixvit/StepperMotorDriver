@@ -1,0 +1,5 @@
+C:\Program Files\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|fa241623-5a77-4f10-aca6-4afcf52586a5
+C:\Program Files\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|08a50f1b-3290-4dfa-b387-3f906f13e373
+C:\Program Files\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|4c746eaa-f321-4f2e-814b-3539cfe3bfc8
+C:\Program Files\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|037229ae-fe9f-4953-b6fb-742b893fad80
+C:\EAGLE\My\StepperMotorDriver\Stepper\MotorDriver.cydsn\MotorDriver.cyprj|276552fb-03b5-4340-b313-986521b47d47
