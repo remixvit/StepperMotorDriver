@@ -259,6 +259,38 @@
 <VisibleNodeIds>
 <v>Stepper</v>
 <v>Stepper\MotorDriver</v>
+<v>Stepper\MotorDriver\CortexM0</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_INT.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_intClock.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_PM.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\Clock.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\Cm0Start.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\Current.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\CyLFClk.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\I2C.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\I2C_BOOT.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\I2C_I2C.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\I2C_I2C_BOOT.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\I2C_I2C_INT.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\I2C_I2C_MASTER.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\I2C_PM.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\I2C_SCB_IRQ.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\I2C_SCBCLK.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\I2C_scl.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\I2C_sda.lst</v>
+<v>Stepper\MotorDriver\CortexM0\ARM_GCC_493\Debug\Listing Files\main.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -279,6 +311,7 @@
 <v>Stepper\MotorDriver\cy_clock_v2_20.pdf</v>
 <v>Stepper\MotorDriver\cy_pins_v2_10</v>
 <v>Stepper\MotorDriver\cy_pins_v2_10\cy_pins_v2_10.pdf</v>
+<v>Stepper\MotorDriver\I2S_v2_60.pdf</v>
 <v>Stepper\MotorDriver\PWM_v3_30.pdf</v>
 <v>Stepper\MotorDriver\SCB_P4_v3_0</v>
 <v>Stepper\MotorDriver\SCB_P4_v3_0\SCB_P4_v3_0.pdf</v>
@@ -295,6 +328,7 @@
 <v>Stepper\MotorDriver\cy_clock_v2_20.pdf</v>
 <v>Stepper\MotorDriver\cy_pins_v2_10</v>
 <v>Stepper\MotorDriver\cy_pins_v2_10\cy_pins_v2_10.pdf</v>
+<v>Stepper\MotorDriver\I2S_v2_60.pdf</v>
 <v>Stepper\MotorDriver\PWM_v3_30.pdf</v>
 <v>Stepper\MotorDriver\SCB_P4_v3_0</v>
 <v>Stepper\MotorDriver\SCB_P4_v3_0\SCB_P4_v3_0.pdf</v>
